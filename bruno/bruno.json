@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "stepback-api",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
