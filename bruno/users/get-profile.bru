@@ -1,0 +1,13 @@
+meta {
+  name: Get Profile
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}/api/users/profile
+  headers: {
+    "Authorization": "Bearer {{access_token}}"
+  }
+  body: none
+}
