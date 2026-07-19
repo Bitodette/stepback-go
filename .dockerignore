@@ -1,0 +1,14 @@
+.git
+.github
+.env
+.env.*
+*.md
+tasks/
+bin/
+tmp/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+docker-compose*.yml
