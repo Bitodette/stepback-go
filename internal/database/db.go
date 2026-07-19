@@ -28,6 +28,8 @@ func Connect(cfg config.DatabaseConfig) {
 		log.Fatal("Failed to get database instance: ", err)
 	}
 
+	// keep idle connections ready so we dont pay handshake cost every request
+	// 10 idle, max 100 — should be enough untuk dev
 	sqlDB.SetMaxIdleConns(10)
 	sqlDB.SetMaxOpenConns(100)
 
